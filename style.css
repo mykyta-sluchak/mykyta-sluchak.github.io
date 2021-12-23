@@ -44,7 +44,7 @@ a{
 	display: block;
 	background-color: #aaa;
 	height: 2px;
-	width: 10px;
+	width: 12px;
 	top: calc(50% - 1px);
 	position: absolute;
 	left: 0;
@@ -59,7 +59,7 @@ a{
 	display: block;
 	background-color: #aaa;
 	height: 2px;
-	width: 10px;
+	width: 12px;
 	top: calc(50% - 1px);
 	position: absolute;
 	right: 0;
@@ -77,9 +77,11 @@ a{
 	padding: 10px;
 	transform: translateY(0) scaleY(0);
 	transition-duration: 200ms;
+	transition-property: transform;
+	transition-delay: 50ms;
+	transition-timing-function:cubic-bezier(7,3,7,3);
 }
 #header .btn .menu-btn{
-	
 	height: 20px;
 	line-height: 20px;
 	color: #aaa;
