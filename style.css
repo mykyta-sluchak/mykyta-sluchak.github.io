@@ -1,0 +1,111 @@
+ @font-face{
+ 	font-family: p1;
+ 	src: url("7/Troubleside.ttf");
+ }
+ body{
+
+	margin: 0;
+}
+a{
+	text-decoration-line: none;
+}
+#header{
+	height: 50px;
+	position: fixed;
+	z-index: 100;
+}
+#header .btn{
+	display: inline-block;
+	vertical-align: top;
+	height: 30px;
+	padding: 10px;
+	padding-right: 15px;
+	margin-right: 10px;
+	font-family: p1;
+	color: #aaa;
+	font-style: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+#header .btn:hover{
+	background-color: rgba(0,0,0.8);
+}
+#header .btn .arr{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 20px;
+	width: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#header .btn .arr::before{
+	content: "";
+	display: block;
+	background-color: #aaa;
+	height: 2px;
+	width: 10px;
+	top: calc(50% - 1px);
+	position: absolute;
+	left: 0;
+	transform: rotate(-45deg);
+}
+#header .btn:hover .arr::before{
+	transform: rotate(45deg);
+}
+#header .btn .arr::after{
+	content: "";
+	display: block;
+	background-color: #aaa;
+	height: 2px;
+	width: 10px;
+	top: calc(50% - 1px);
+	position: absolute;
+	right: 0;
+	transform: rotate(45deg);
+}
+#header .btn:hover .arr::after{
+	transform: rotate(-45deg);
+}
+#header .btn .menu{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: rgba(0,0,0,0.8);
+	padding: 10px;
+	transform: translateY(0) scaleY(0);
+	transition-duration: 200ms;
+}
+#header .btn .menu-btn{
+	
+	height: 20px;
+	line-height: 20px;
+	color: #aaa;
+	text-transform: none;
+}
+#header .btn:hover .menu{
+	transform: translateY(0) scaleY(1)
+}
+#content{
+	min-height: 100vh;
+	background-color: #111;
+}
+#content video{
+	width: 100%;
+}
+#footer{
+	text-align: center;
+	padding: 50px;
+	background-color: #222;
+}
+#footer span {
+	margin: 20px;
+	color: #aaa;
+}
+
+#footer a{
+	color: #aaa;
+}
+#footer a:hover{
+	text-decoration-line: underline;
+}
