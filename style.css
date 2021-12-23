@@ -49,6 +49,7 @@ a{
 	position: absolute;
 	left: 0;
 	transform: rotate(-45deg);
+	transition-duration: 200ms;
 }
 #header .btn:hover .arr::before{
 	transform: rotate(45deg);
@@ -63,6 +64,7 @@ a{
 	position: absolute;
 	right: 0;
 	transform: rotate(45deg);
+	transition-duration: 200ms;
 }
 #header .btn:hover .arr::after{
 	transform: rotate(-45deg);
